@@ -1,0 +1,20 @@
+{% load crispy_forms_tags %}
+<html>
+    <h1>TASK ALLOCATION SYSTEM</h1>
+    <body>
+        <form method="post" action="navigation">
+            
+            {%csrf_token%}{{Employee_form|crispy}}
+            
+            <input type="submit" value="Submit"><br>
+           
+        </form>
+        
+        
+    </body>
+</html>
+<style>
+    body{
+        background-color: palevioletred;
+    }
+</style>

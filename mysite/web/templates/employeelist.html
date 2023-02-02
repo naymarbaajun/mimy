@@ -1,0 +1,33 @@
+<h1>Employee Database</h1>
+
+<p></p>
+<p>{{m.name }}</p>
+<p>{{m.age }}</p><br/>
+
+<p>{{m.location }}</p><br/>
+<p>{{m.email }}</p></br>
+
+
+<table>
+    <th>
+        <tr>name</tr><br/>
+
+        <tr>age</tr></th><br/>
+        <tr>location</tr><br/>
+        <tr>email</tr><br/>
+    </th>
+    </table>
+        
+    {% for m in emp %}
+    <tbody>
+        <td>{{m.name }}</td><br/>
+
+        <td>age: {{m.age}}</td> <br/>
+        <td>location: {{m.location}}</td><br/>
+        <td>email: {{m.email}}</td><hr>
+    </tbody>
+    
+
+
+    {% endfor%}
+</table>

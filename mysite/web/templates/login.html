@@ -1,0 +1,28 @@
+<h1>Person information</h1>
+<form method="post" action="navigation">
+    {% csrf_token %}
+<form >
+   First  name:<br>
+    <input type="text" name="firstname">
+    <br>
+  
+  
+    Gender:<br>
+    <input type="text" name="gender">
+    <br>
+    Email:<br>
+    <input type="text" name="email">
+    <br>
+    Password:<br>
+    <input type="text" name="Password">
+    <br>
+    <input type="submit" value="Submit"><br>
+    <input type="radio" name="gender" value="male" checked> Male<br>
+    <input type="radio" name="gender" value="female" checked> Female<br>
+    <input type="radio" name="gender" value="other"> Other
+</form>
+<style>
+    body{
+        background-color: goldenrod;
+    }
+</style>
